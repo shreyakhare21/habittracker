@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/736x/bb/38/2a/bb382a40da763f1948b9cdaecffa23e8.jpg') no-repeat center center/cover; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+            padding-top: 20px;
+
+    }
+    .parent-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      max-width: 1200px;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .left, .middle, .right {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px red (0,0,0,0.1);
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #8D5F8C;
+      text-align: center;
+    }
+    .quote-box {
+      background: #f1f1f1;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      font-style: italic;
+      font-size: 16px;
+      color: #800442;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg,#D9A299 , #8D5F8C);
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .middle img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .calendar {
+      height: 300px;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color:#800442;
+    }
+    .description {
+      grid-column: span 3;
+      margin-top: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      font-size: 17px;
+      color: #800442;
+      line-height: 1.6;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      
+    }
+        table {
+            border-collapse: collapse;
+            width: 200%;
+            max-width: 400px;
+        }
+        th, td {
+            border: 1px solid #800442;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td:hover {
+            background-color: #B96974;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+  </style>
+</head>
+<body>
+  <div class="parent-box">
+  
+    <div class="left" style="display:flex; flex-direction: column; align-items: center;" >
+      <h1><u>Habit Tracker</u></h1>
+      <div class="quote-box">"Small steps every day lead to big changes."</div>
+      <div class="quote-box">"Your habits decide your future."</div>
+      <a href="main1.html" class="btn">Track Your Habits</a>
+      <a href="third.html" class="btn">Soul Scribbles</a>
+      
+    </div>
+
+    <div class="middle">
+     
+      <img src="https://i.pinimg.com/736x/82/35/0e/82350e3ee30ac5cb38c282f26dce9680.jpg" alt="Habit Tracker Image">
+   
+    </div>
+
+    
+    <div class="right" >
+      <div class="calendar">
+        
+        <table>
+    <caption>September 2025</caption>
+    <tr>
+        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+    </tr>
+    <tr>
+        <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+    </tr>
+    <tr>
+        <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+    </tr>
+    <tr>
+        <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+    </tr>
+    <tr>
+        <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+    </tr>
+    <tr>
+        <td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td>
+    </tr>
+</table>
+
+        
+      </div>
+    </div>
+
+    
+    <div class="description">
+      Habit Tracker is a simple tool to help you stay consistent and build positive routines.
+      Track your daily progress, visualize your growth, and stay motivated to achieve your goals.
+    </div>
+  </div>
+</body>
+</html>
